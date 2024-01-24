@@ -1,0 +1,65 @@
+# TODO: correct the following:
+# * site_name
+# * repo_url
+# * repo_name
+
+site_name: HOUSE DOCS TEMPLATE
+theme:
+  name: material
+  font:
+    text: Atkinson Hyperlegible
+    code: Source Code Pro
+  custom_dir: overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    logo: fontawesome/regular/hand-peace
+repo_url: https://github.com/blakenetz/house-wiki
+repo_name: blakenetz/house-wiki
+edit_uri: edit/main/docs/docs/
+plugins:
+  - glightbox
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - pymdownx.smartsymbols
+  - pymdownx.betterem
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
