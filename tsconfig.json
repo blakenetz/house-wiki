@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["./docs/typescript/*", "./types/*"],
+  "compilerOptions": {
+    "outDir": "./docs/javascript"
+  }
+}

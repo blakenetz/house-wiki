@@ -1,0 +1,19 @@
+{
+  "name": "house-wiki",
+  "version": "1.0.0",
+  "description": "For use as a template when documentation for a house, van, etc",
+  "scripts": {
+    "ts:build": "tsc",
+    "ts:watch": "tsc -w",
+    "serve": "just serve",
+    "setup": "just setup"
+  },
+  "author": "Blake Netzeband <blakenetzeband@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "rxjs": "^7.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}

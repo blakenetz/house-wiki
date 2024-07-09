@@ -40,6 +40,7 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - table-reader
 markdown_extensions:
   - admonition
   - toc:
@@ -63,3 +64,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascript/table.js
