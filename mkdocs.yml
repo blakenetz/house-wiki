@@ -65,6 +65,9 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascript/table.js
