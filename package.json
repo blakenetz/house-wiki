@@ -6,7 +6,8 @@
     "ts:build": "tsc",
     "ts:watch": "tsc -w",
     "serve": "just serve",
-    "setup": "just setup"
+    "setup": "just setup",
+    "csv": "ts-node -P scripts/tsconfig.json scripts/generateCSV.ts"
   },
   "author": "Blake Netzeband <blakenetzeband@gmail.com>",
   "license": "ISC",
